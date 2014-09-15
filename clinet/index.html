@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"></meta>
+
+  <title>Iron Password</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>Password Is Iron</header>
+
+  <ul class="menu">
+    <li>password options </li>/
+    <li> generate</li>
+  </ul>
+
+    <div class="active" id="options">
+      <ul id="items">
+        <li val="0" class="yes">Include Number : (e.g. 12345)</li>
+        <li val="1">Include Symbols : (e.g. !@$#%$)</li>
+        <li val="2">Include Lowercase Character : (e.g. qwert)</li>
+        <li val="3">Include Uppercase Character : (e.g. QWERT)</li>
+        <li val="4">Include Ambiguous Characters : (e.g. `{},/?)
+      </ul>
+      <p>Length : </p>
+      <input id="amount" />
+    </div>
+
+    <div class="diactive" id="generate">
+      <button id="makeDinner">Generate</button>
+      <p id="result"></p>
+    </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
