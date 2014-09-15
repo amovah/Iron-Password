@@ -1,0 +1,104 @@
+@keyframes bye {
+  from {
+    transform: rotate(0deg) scale(1, 1);;
+  }
+  to {
+    transform: rotate(360deg) scale(0, 0);
+  }
+}
+@keyframes hi {
+  from {
+    transform: scale(0, 0);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+@font-face {
+  font-family: 'Head';
+  src: url(head.ttf);
+}
+body {
+  text-align: center;
+  background-color: #328F15;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+header {
+  font-size: 7rem;
+  font-family: Head;
+}
+.menu {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+.menu li {
+  cursor: pointer;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  font-size: 1.5rem;
+}
+.menu li:hover {
+  text-decoration: underline;
+}
+.yes {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#options input {
+  color: black;
+  border: 0;
+  width: 90%;
+  padding: 10px;
+}
+.active,
+.diactive {
+  padding: 10px;
+  margin: 10px auto;
+  width: 700px;
+  border: 5px solid rgba(255, 255, 255, 0.6);
+}
+#items {
+  margin: 0;
+  padding: 0;
+}
+#items li {
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: left;
+  display: block;
+  margin: 5px;
+  padding: 30px;
+  list-style: none;
+  transition: all 0.3s;
+}
+.diactive {
+  transform: scale(0,0);
+  position: absolute;
+}
+.out {
+  animation-name: bye;
+  animation-duration: 0.5s;
+}
+.in {
+  animation-name: hi;
+  animation-duration: 0.5s;
+}
+#makeDinner {
+  border: 0;
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: #134D00;
+  transition: all 0.2s;
+}
+#makeDinner:active {
+  transform: scale(0.9, 0.9);
+}
+#result {
+  word-break: break-all;
+}
