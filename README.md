@@ -9,10 +9,10 @@ My REST API as follow :
 ##Categories
 Categories is a number like : 03
 ###Available Categories
-Numbers : 0
-Symbols: 1
-Lowercase character : 2
-Uppercase character : 3
-Ambiguous symbols : 4
+Numbers : 0<br>
+Symbols: 1<br>
+Lowercase character : 2<br>
+Uppercase character : 3<br>
+Ambiguous symbols : 4<br>
 you can create your categories with number as follow :
 012 or 32
